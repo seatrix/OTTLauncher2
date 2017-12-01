@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/bg">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <!--<ImageView
+            android:id="@+id/logoView"
+            android:layout_width="@dimen/logo_view_width"
+            android:layout_height="@dimen/logo_view_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/logo" />-->
+
+        <TextView
+            android:id="@+id/clockText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="90dp"
+            android:textSize="28sp"
+            android:textColor="@color/antiquewhite"/>
+
+        <ImageView
+            android:id="@+id/netView"
+            android:layout_width="@dimen/ethe_view_width"
+            android:layout_height="@dimen/ethe_view_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp"
+            android:background="@mipmap/ethernet0" />
+
+        <RelativeLayout
+            android:id="@+id/main_rLayout_2"
+            android:layout_width="42dp"
+            android:layout_height="@dimen/usb_view_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/netView">
+
+            <ImageView
+                android:id="@+id/usbView"
+                android:layout_width="@dimen/usb_view_width"
+                android:layout_height="fill_parent"
+                android:background="@mipmap/usb" />
+
+            <TextView
+                android:id="@+id/usbText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/goldenrod"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.histar.hslauncher.MainPage
+        android:id="@+id/MainPage"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <com.histar.hslauncher.CustomBar
+        android:id="@+id/customBar"
+        android:layout_marginTop="470dp"
+        android:layout_alignLeft="@id/MainPage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
